@@ -14,13 +14,13 @@ public class User {
     @Id
     @Column(name = "iduser")
     private Integer iduser;
-    @Basic
+
     @Column(name = "username")
     private String username;
-    @Basic
+
     @Column(name = "email")
     private String email;
-    @Basic
+
     @Column(name = "password")
     private String password;
 

@@ -11,23 +11,24 @@ import java.util.Objects;
 @Setter
 @Entity
 public class Reserva {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idreserva")
     private int idreserva;
-    @Basic
+
     @Column(name = "fecha_reserva")
     private LocalDate fechaReserva;
-    @Basic
+
     @Column(name = "precio_total")
     private int precioTotal;
-    @Basic
+
     @Column(name = "estado_pago")
     private String estadoPago;
 
     @ManyToOne
     @JoinColumn(name = "user_iduser")
     private  User user;
+
     @ManyToOne
     @JoinColumn(name = "vuelo_idvuelo")
     private Vuelo vuelo ;

@@ -14,22 +14,22 @@ public class Vuelo {
     @Id
     @Column(name = "idvuelo")
     private int idvuelo;
-    @Basic
+
     @Column(name = "origen")
     private String origen;
-    @Basic
+
     @Column(name = "destino")
     private String destino;
-    @Basic
+
     @Column(name = "fecha_salida")
     private Timestamp fechaSalida;
-    @Basic
+
     @Column(name = "fecha_llegada")
     private Timestamp fechaLlegada;
-    @Basic
+
     @Column(name = "duracion")
     private int duracion;
-    @Basic
+
     @Column(name = "precio")
     private int precio;
 
@@ -37,10 +37,9 @@ public class Vuelo {
     @JoinColumn(name = "aerolinea_idaerolinea")
     private Aerolinea aerolinea;
 
-    @Basic
     @Column(name = "asientos_disponibles")
     private int asientosDisponibles;
-    @Basic
+
     @Column(name = "descripcion")
     private String descripcion;
 
